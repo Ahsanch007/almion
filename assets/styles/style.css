@@ -632,3 +632,131 @@ body {
 .moove-gdpr-branding-cnt {
     display: none;
 }
+
+
+
+
+
+/* blog-section */
+
+.blog-section{
+    text-align: center;
+}
+.blog-section h2{
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #474f40;
+}
+.blog-section p{
+    font-family: monument, serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #474f40;
+    text-transform: uppercase;
+    margin: 21px 0 0;
+    letter-spacing: .15em;
+    margin-bottom: 20px;
+
+}
+
+.qodef-blog-item{
+    max-width: 333px;
+    width: 100%;
+    text-align: center;
+}
+.qodef-e-title a {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    font-size: 34px;
+    line-height: 1.20588em;
+    letter-spacing: .02em;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.qodef-e-info>* {
+    font-family: monument, serif;
+
+    font-size: 12px;
+    line-height: 1.66667em;
+    font-weight: 500;
+    letter-spacing: .175em;
+    text-transform: uppercase;
+    color: #474f40;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    line-height: 1.25em;
+}
+
+.elementor-top-section {
+    background-color: #C5CCB8;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 30px 0px 30px 0px;
+}
+.elementor-column-gap-default{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+.qodef-m-content{
+    font-size: 12px;
+    line-height: 1.66667em;
+    font-weight: 500;
+    letter-spacing: .175em;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.qodef-m-separator {
+    width: 0.42em;
+    height: 0.42em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    transform: rotate(45deg);
+    background-color: currentcolor;
+    margin: 0px 10px;
+}
+.qodef-m-content-inner {
+    display: flex;
+    animation: marqueeAnimation 20s linear infinite; /* Adjust the duration as needed */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+
+.rotate-image {
+    animation: rotate 5s linear infinite; /* Adjust the duration and timing function as needed */
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes marqueeAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media(max-width:800px){
+    .qodef-blog-item{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
