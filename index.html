@@ -91,8 +91,8 @@
                         <a class="estudio__nav " href="#services">Servios</a>
                     </div>
                     <div class="container__contacto">
-                        <a class="contacto__nav " href="#colophon">Contacto</a>
-                        <a class="contacto__nav " href="#colophon">Contacto</a>
+                        <a class="contacto__nav " href="contact.html">Contacto</a>
+                        <a class="contacto__nav " href="contact.html">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -177,24 +177,12 @@
                     </div>
                     <div class="video__container">
                         <div class="video__inner__container">
-                            <img src="./assets/images/296A2568.jpg" width="500px" height="400px"
-                                style="object-fit: cover;" alt="" class="active">
-                            <img src="./assets/images/296A2292.jpg" width="500px" height="400px"
-                                style="object-fit: cover;" alt="">
-                            <img src="./assets/images/296A2304.jpg" width="500px" height="400px"
-                                style="object-fit: cover;" alt="">
-                            <img src="./assets/images/296A2272.jpg" width="500px" height="400px"
-                                style="object-fit: cover;" alt="">
-                            <div class="mbl">
-                                <img src="./assets/images/296A2568.jpg" style="height: 422px; width: 100%;"
-                                    style="object-fit: cover;" alt="" class="active">
-                                <img src="./assets/images/296A2292.jpg" style="height: 422px; width: 100%;"
-                                    style="object-fit: cover;" alt="">
-                                <img src="./assets/images/296A2304.jpg" style="height: 422px; width: 100%;"
-                                    style="object-fit: cover;" alt="">
-                                <img src="./assets/images/296A2272.jpg" style="height: 422px; width: 100%;"
-                                    style="object-fit: cover;" alt="">
-                            </div>
+                            <video class="dsk" playsinline="" autoplay="" muted="" loop="">
+                                <source src="./assets/images/(PC) VIDEO AT THE TOP.mp4" type="video/mp4">
+                            </video>
+                            <video class="mbl" playsinline autoplay muted loop>
+                                <source src="./assets/images/MOBILE DEVICES.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                     <div class="language__container">
@@ -488,13 +476,13 @@
             </div>
             <div class="miembros">
                 <div class="miembro">
-                    <div class="img__container esp">
-                        <img src="./assets/images/LOGO 1.svg" style=" margin-top: 44px;" alt="">
+                    <div class="img__container cris">
+                        <img src="./assets/images/LOGO WITHOUT BACKGROUND.svg" alt="">
                     </div>
                 </div>
                 <div class="miembro margin">
                     <div class="img__container cris">
-                        <img src="./assets/images/LOGO 2.svg" alt="">
+                        <img src="./assets/images/LOGO 2 WITHOUT BACKGROUND.svg" alt="">
                     </div>
                 </div>
 
@@ -542,14 +530,9 @@
                 </div>
                 <div class="center">
                     <div class="video__inner__container">
-                        <img src="./assets/images/296A2568.jpg" style="object-fit: cover; width: 100%; height: 100%;"
-                            alt="" class="active">
-                        <img src="./assets/images/296A2292.jpg" style="object-fit: cover; width: 100%; height: 100%;"
-                            alt="">
-                        <img src="./assets/images/296A2304.jpg" style="object-fit: cover; width: 100%; height: 100%;"
-                            alt="">
-                        <img src="./assets/images/296A2272.jpg" style="object-fit: cover; width: 100%; height: 100%;"
-                            alt="">
+                        <video playsinline autoplay muted loop>
+                            <source src="./assets/images/(PC) VIDEO NUESTROS SERVICIOS.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
                 <div class="right">
@@ -754,11 +737,19 @@
                         </div>
                     </article>
                 </div>
-
+                <div style="text-align: center;">
+                    <button
+                        style="padding: 15px ;cursor: pointer;; width: 150px; color: #474f40; border: 1px solid #474f40; background-color: transparent; border-radius: 10px;">
+                        <a href="https://castella.qodeinteractive.com/" target="_blank"
+                            style=" color: #474f40;text-decoration: none;">
+                            View
+                            All
+                        </a></button>
+                </div>
 
 
             </div>
-            <div class="contacto">
+            <div class=" contacto">
                 <div class="contacto__container">
                     <div class="img__container left star">
                         <svg viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -835,25 +826,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const images = document.querySelectorAll('.video__inner__container img');
-            let currentIndex = 0;
-
-            function showImage(index) {
-                images.forEach(img => img.classList.remove('active'));
-                images[index].classList.add('active');
-            }
-
-            function nextImage() {
-                currentIndex = (currentIndex + 1) % images.length;
-                showImage(currentIndex);
-            }
-
-            // Change image every 100 milliseconds (adjust the interval as needed)
-            setInterval(nextImage, 400);
-        });
-    </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const images = document.querySelectorAll('.mbl img');
             let currentIndex = 0;
 
             function showImage(index) {

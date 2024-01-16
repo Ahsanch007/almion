@@ -2170,7 +2170,7 @@ img {
 
 .equipaso__container {
     text-align: center;
-    padding-bottom: 7vw;
+    /* padding-bottom: 7vw; */
     padding-top: 5vw
 }
 
@@ -2253,9 +2253,10 @@ img {
 
 .miembros .miembro .img__container {
     position: absolute;
-    width: 19vw;
+    width: 22vw;
     height: 22vw;
     padding-bottom: 150%
+    
 }
 
 @media screen and (max-width:768px) {
@@ -2391,7 +2392,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 16vw
+    padding-bottom: 6vw
 }
 
 @media screen and (max-width:768px) {
