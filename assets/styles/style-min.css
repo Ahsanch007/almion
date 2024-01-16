@@ -2550,7 +2550,8 @@ img {
 }
 
 .site-footer {
-    padding: 0 0 4vw 0
+    padding-top: 7vw;
+    padding-bottom: 4vw ;
 }
 
 @media screen and (max-width:768px) {
