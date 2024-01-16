@@ -797,4 +797,8 @@ body {
     .video__inner__container{
         margin-top: 0px;
     }
+    .mob-imgg{
+
+        height: 200px !important;
+    }
 }

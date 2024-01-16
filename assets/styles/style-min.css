@@ -2237,7 +2237,7 @@ img {
 @media screen and (max-width:768px) {
     .miembros .miembro {
         width: 80vw;
-        height: 92vw
+        height: 74vw
     }
 }
 
@@ -2430,8 +2430,8 @@ img {
     .contacto .contacto__container .img__container.left {
         top: -40%;
         left: 46%;
-        width: 8vw;
-        height: 8vw
+        width: 10vw;
+        height: 10vw
     }
 }
 
@@ -2444,8 +2444,8 @@ img {
     .contacto .contacto__container .img__container.right {
         top: 40%;
         left: 46%;
-        width: 8vw;
-        height: 8vw
+        width: 10vw;
+        height: 10vw
     }
 }
 
