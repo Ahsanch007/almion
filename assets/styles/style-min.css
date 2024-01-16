@@ -2340,7 +2340,7 @@ img {
     width: 33vw;
     display: flex;
     flex-direction: column;
-    padding-top: 3vw
+    /* padding-top: 3vw */
 }
 
 .marcas .left .atb__container,
