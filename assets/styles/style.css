@@ -791,4 +791,10 @@ body {
     .qodef-blog-item{
       padding: 20px 0px;
     }
+    .mbl{
+        padding: 20px 0px;
+    }
+    .video__inner__container{
+        margin-top: 0px;
+    }
 }

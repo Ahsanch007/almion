@@ -2177,7 +2177,7 @@ img {
 @media screen and (max-width:768px) {
     .equipaso__container {
         padding-top: 8vw;
-        padding-bottom: 14vw
+        /* padding-bottom: 14vw */
     }
 }
 
@@ -2397,7 +2397,7 @@ img {
 
 @media screen and (max-width:768px) {
     .contacto {
-        padding-top: 46vw;
+        padding-top: 20vw;
         padding-bottom: 16vw
     }
 }
@@ -2411,7 +2411,7 @@ img {
 
 @media screen and (max-width:768px) {
     .contacto .contacto__container {
-        padding-bottom: 32vw
+        padding-bottom: 9vw
     }
 }
 
@@ -2559,7 +2559,8 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center
+        text-align: center;
+        padding-top: 23vw;
     }
 }
 
@@ -4711,7 +4712,7 @@ template {
     align-items: center;
     width: 100%;
     height: 100%;
-    background: url(../images/Desert_Background.jpg) no-repeat center;
+    background: url(../images/WhatsApp\ Image\ 2024-01-16\ at\ 18.03.21_633bc08f.jpg) no-repeat center;
     background-size: cover;
     overflow: hidden
 }
