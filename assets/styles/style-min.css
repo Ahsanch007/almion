@@ -135,7 +135,7 @@ img {
     font-family: monument, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 4vw;
     line-height: 120%;
     letter-spacing: .2em;
     margin-bottom: 10px;
@@ -195,7 +195,7 @@ img {
     font-family: monument, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 3.6458333333333335vw;
+    font-size: 2.6458333333333335vw;
     line-height: 120%;
     letter-spacing: .1em
 }
@@ -1212,7 +1212,7 @@ img {
     position: relative;
     top: 8.1vw;
     left: 25.1vw;
-    margin-bottom: 4vw;
+    margin-bottom: 1vw;
     overflow: hidden
 }
 
@@ -2176,7 +2176,7 @@ img {
 
 @media screen and (max-width:768px) {
     .equipaso__container {
-        padding-top: 42vw;
+        padding-top: 8vw;
         padding-bottom: 14vw
     }
 }
@@ -2339,7 +2339,7 @@ img {
     width: 33vw;
     display: flex;
     flex-direction: column;
-    /* padding-top: 3vw */
+    padding-top: 3vw
 }
 
 .marcas .left .atb__container,
@@ -2397,7 +2397,7 @@ img {
 @media screen and (max-width:768px) {
     .contacto {
         padding-top: 46vw;
-        padding-bottom: 60vw
+        padding-bottom: 16vw
     }
 }
 
@@ -2470,7 +2470,7 @@ img {
 
 @media screen and (max-width:768px) {
     .contacto .contacto__container .mail__container .mail {
-        font-size: 6vw
+        font-size: 4vw
     }
 }
 
@@ -4455,9 +4455,9 @@ img {
 }
 
 
-.img__container img {
+/* .img__container img {
     width: 100%
-}
+} */
 
 .error-404 {
     display: flex;

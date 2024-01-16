@@ -735,6 +735,9 @@ body {
 .rotate-image {
     animation: rotate 5s linear infinite; /* Adjust the duration and timing function as needed */
 }
+.video__inner__container{
+    margin-top: 30px;
+}
 .video__inner__container img {
     width: 100%;
     height: 256px;
@@ -748,7 +751,19 @@ body {
 .video__inner__container img.active {
     opacity: 1;
 }
+.mbl img {
+    width: 100%;
+    height: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
 
+.mbl img.active {
+    opacity: 1;
+}
 
 @keyframes rotate {
     from {
@@ -769,8 +784,6 @@ body {
 
 @media(max-width:800px){
     .qodef-blog-item{
-        max-width: 100%;
-        width: 100%;
-        text-align: center;
+      padding: 20px 0px;
     }
 }
