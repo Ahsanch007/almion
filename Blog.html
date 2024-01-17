@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap" rel="stylesheet">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name="google-site-verification" content="NjhKGJC-1ed6D0-UBjNSPFpxofurxlxB0GjyT66OIXk" />
+
+    <title>Almion</title>
+    <!-- <meta name="google-site-verification" content="NjhKGJC-1ed6D0-UBjNSPFpxofurxlxB0GjyT66OIXk" />
+    <link rel='dns-prefetch' href='//code.jquery.com' />
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+    <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+    <link rel='dns-prefetch' href='//unpkg.com' />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//s.w.org' /> -->
+
+
+
+    <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js?ver=3.5.1' id='jQuery-js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js?ver=3.5.1' id='greensock-js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js?ver=3.5.1'
+        id='scrollTrigger-js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EasePack.min.js?ver=3.0.1' id='easepack-js'></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js?ver=4.1.4' id='imagesLoaded-js'></script>
+    <script src='https://unpkg.com/@barba/core?ver=2.4.0' id='barba-js'></script>
+    <script src='https://unpkg.com/@barba/prefetch?ver=2.4.0' id='barbaPrefetch-js'></script>
+    <script src='https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js?ver=8.5.3'
+        id='smoothScrollbar-js'></script>
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style-min.css">
+
+</head>
+
+<body class="home page-template page-template-page-home page-template-page-home-php page page-id-8 is-loading"
+    data-barba="wrapper">
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDFHXKS" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+    <div class="loader">
+        <div class="loader__mask">
+            <!-- <div class="inner">
+                <div class="progress"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="loader__content">
+        <div class="inner">
+            <!-- this will be animated on top of the dark background -->
+            <div class="loader__title">
+                <!-- <div class="loader__title--mask"><span>Algo sobre </span></div>
+                <div class="loader__title--mask"><span>la tierra</span></div> -->
+            </div>
+            <div class="loader__image">
+                <div class="loader__image--mask">
+                    <img src="./assets/images/SOL.svg" width="100px" alt="" class="rotate-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewport">
+
+
+        <header id="masthead" class="header">
+            <nav id="site-navigation" class="navigation">
+
+                <div class="proyectos__nav__c">
+                    <div class="logo__nav__c ">
+                        <a href="index.html">
+                            <img src="./assets/images/LETRAS.svg" width="150px" alt="">
+                        </a>
+                    </div>
+                    <div class="container__proyectos__menu">
+                        <a class="proyectos__nav  mPro" href="projects.html">Portafolio</a>
+                        <a class="proyectos__nav  mPro" href="projects.html">Portafolio</a>
+                    </div>
+                </div>
+                <div class="shop__nav__c">
+                    <!-- <span class="shop__nav">Shop</span> -->
+                </div>
+                <div class="estudio__nav__c">
+                    <div class="container__estudio">
+                        <a class="estudio__nav " href="#services">Nuestros servicios</a>
+                        <a class="estudio__nav " href="#services">Nuestros servicios</a>
+                    </div>
+                    <div class="container__contacto">
+                        <a class="contacto__nav " href="contact.html">Contacto</a>
+                        <a class="contacto__nav " href="contact.html">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="header__mobile">
+            <nav id="site-navigation" class="navigation">
+                <div class="logo__container">
+                    <div class="logoMob ">
+                        <a href="/">
+                            <img src="./assets/images/LETRAS.svg" width="67px" alt="">
+
+                        </a>
+                    </div>
+                </div>
+                <div class="menu__nav__container">
+                    <span class="menu__nav ">Menú</span>
+                </div>
+                <div class="hidden__nav">
+                    <img src="./assets/images/LETRAS.svg" width="100px" alt="">
+                    <svg class="xclose" viewBox="0 0 241.171 241.171" style="enable-background:new 0 0 241.171 241.171;"
+                        xml:space="preserve">
+                        <g>
+                            <path d="M138.138,120.754l99.118-98.576c4.752-4.704,4.752-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+						l-99.033,98.492L21.095,3.699c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l99.876,99.888L3.555,220.497
+						c-4.74,4.704-4.74,12.319,0,17.011c4.74,4.704,12.439,4.704,17.179,0l100.152-99.599l99.551,99.563
+						c4.74,4.752,12.439,4.752,17.179,0c4.74-4.764,4.74-12.475,0-17.227L138.138,120.754z" />
+                        </g>
+                    </svg>
+                    <div class="hidden__container">
+                        <a class="link__nav" href="/">Inicio</a>
+                        <a class="link__nav mPro" href="projects.html">Portafolio
+                        </a>
+                        <a class="link__nav" href="#">Nuestros servicios</a>
+                        <a class="link__nav" href="contact.html">Contacto</a>
+                        <!-- <a class="link__nav" href="/shop/">Shop</a> -->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <main id="main" class="home" data-barba="container" data-barba-namespace="inicio">
+
+
+
+
+
+
+            <div class="contacto " id="alalimon" style="padding-top: 10vw;">
+                <div class="contacto__container">
+
+                    <div class="blog-section">
+                        <h2>
+                            WE’RE GETTING MARRIED!
+                        </h2>
+                        <p>
+                            Come & celebrate with us
+                        </p>
+                        <p class="qodef-m-text" style="margin: 2% 10% 0% 10%">Tellus eget condimentum rhoncus, sem quam
+                            nec vitae sapien semper libero,
+                            blandit vel, rhoncus venenatis luctus pulvinar, hendrerit id, lorem. </p>
+                    </div>
+
+                </div>
+
+                <div class="miembros" style="padding: 40px 0px;">
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <a href="https://castella.qodeinteractive.com/" target="_blank">
+                            <div class="qodef-e-inner">
+                                <div class="qodef-e-media">
+                                    <div class="qodef-e-media-image">
+                                        <a itemprop="url" href="https://castella.qodeinteractive.com/">
+                                            <img loading="lazy" decoding="async" src="./assets/images/blog-h1.png"
+                                                class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                    </div>
+                                </div>
+                                <div class="qodef-e-content">
+                                    <div class="qodef-e-text">
+                                        <h4 itemprop="name" class="qodef-e-title entry-title">
+                                            <a itemprop="url" class="qodef-e-title-link" href="#">
+                                                Floral fantasy, decoration </a>
+                                        </h4>
+                                    </div>
+                                    <div class="qodef-e-info">
+                                        <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/"
+                                            class="entry-date published updated">
+                                            November 30, 2022</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                        <a href="https://castella.qodeinteractive.com/" rel="tag">Ceremony</a><span
+                                            class="qodef-info-separator-single"></span><a
+                                            href="https://castella.qodeinteractive.com/category/dress/"
+                                            rel="tag">Dress</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-2.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HOW TO CHOOSE AN INVITATION </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-3.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HEART OF BEST MEMORIES </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="miembros" style="padding: 40px 0px;">
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <a href="https://castella.qodeinteractive.com/" target="_blank">
+                            <div class="qodef-e-inner">
+                                <div class="qodef-e-media">
+                                    <div class="qodef-e-media-image">
+                                        <a itemprop="url" href="https://castella.qodeinteractive.com/">
+                                            <img loading="lazy" decoding="async" src="./assets/images/blog-h1.png"
+                                                class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                    </div>
+                                </div>
+                                <div class="qodef-e-content">
+                                    <div class="qodef-e-text">
+                                        <h4 itemprop="name" class="qodef-e-title entry-title">
+                                            <a itemprop="url" class="qodef-e-title-link" href="#">
+                                                Floral fantasy, decoration </a>
+                                        </h4>
+                                    </div>
+                                    <div class="qodef-e-info">
+                                        <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/"
+                                            class="entry-date published updated">
+                                            November 30, 2022</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                        <a href="https://castella.qodeinteractive.com/" rel="tag">Ceremony</a><span
+                                            class="qodef-info-separator-single"></span><a
+                                            href="https://castella.qodeinteractive.com/category/dress/"
+                                            rel="tag">Dress</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-2.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HOW TO CHOOSE AN INVITATION </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-3.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HEART OF BEST MEMORIES </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="miembros" style="padding: 40px 0px;">
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <a href="https://castella.qodeinteractive.com/" target="_blank">
+                            <div class="qodef-e-inner">
+                                <div class="qodef-e-media">
+                                    <div class="qodef-e-media-image">
+                                        <a itemprop="url" href="https://castella.qodeinteractive.com/">
+                                            <img loading="lazy" decoding="async" src="./assets/images/blog-h1.png"
+                                                class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                    </div>
+                                </div>
+                                <div class="qodef-e-content">
+                                    <div class="qodef-e-text">
+                                        <h4 itemprop="name" class="qodef-e-title entry-title">
+                                            <a itemprop="url" class="qodef-e-title-link" href="#">
+                                                Floral fantasy, decoration </a>
+                                        </h4>
+                                    </div>
+                                    <div class="qodef-e-info">
+                                        <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/"
+                                            class="entry-date published updated">
+                                            November 30, 2022</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                        <a href="https://castella.qodeinteractive.com/" rel="tag">Ceremony</a><span
+                                            class="qodef-info-separator-single"></span><a
+                                            href="https://castella.qodeinteractive.com/category/dress/"
+                                            rel="tag">Dress</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-2.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HOW TO CHOOSE AN INVITATION </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-3.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HEART OF BEST MEMORIES </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="miembros" style="padding: 40px 0px;">
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <a href="https://castella.qodeinteractive.com/" target="_blank">
+                            <div class="qodef-e-inner">
+                                <div class="qodef-e-media">
+                                    <div class="qodef-e-media-image">
+                                        <a itemprop="url" href="https://castella.qodeinteractive.com/">
+                                            <img loading="lazy" decoding="async" src="./assets/images/blog-h1.png"
+                                                class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                    </div>
+                                </div>
+                                <div class="qodef-e-content">
+                                    <div class="qodef-e-text">
+                                        <h4 itemprop="name" class="qodef-e-title entry-title">
+                                            <a itemprop="url" class="qodef-e-title-link" href="#">
+                                                Floral fantasy, decoration </a>
+                                        </h4>
+                                    </div>
+                                    <div class="qodef-e-info">
+                                        <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/"
+                                            class="entry-date published updated">
+                                            November 30, 2022</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                        <a href="https://castella.qodeinteractive.com/" rel="tag">Ceremony</a><span
+                                            class="qodef-info-separator-single"></span><a
+                                            href="https://castella.qodeinteractive.com/category/dress/"
+                                            rel="tag">Dress</a>
+                                        <div class="qodef-info-separator-end"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-2.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HOW TO CHOOSE AN INVITATION </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="margin: 0px 20px;"
+                        class="qodef-e qodef-blog-item qodef-grid-item qodef-item--full post-2531 post type-post status-publish format-audio has-post-thumbnail hentry category-ceremony category-dress tag-church tag-decor tag-hall tag-lake tag-lights tag-photography post_format-post-format-audio">
+                        <div class="qodef-e-inner">
+                            <div class="qodef-e-media">
+                                <div class="qodef-e-media-image">
+                                    <a itemprop="url" href="#">
+                                        <img loading="lazy" decoding="async" src="./assets/images/h1-blog-img-3.png"
+                                            class="attachment-full size-full" alt="a" style="width: 100%;"> </a>
+                                </div>
+                            </div>
+                            <div class="qodef-e-content">
+                                <div class="qodef-e-text">
+                                    <h4 itemprop="name" class="qodef-e-title entry-title">
+                                        <a itemprop="url" class="qodef-e-title-link" href="#">
+                                            HEART OF BEST MEMORIES </a>
+                                    </h4>
+                                </div>
+                                <div class="qodef-e-info">
+                                    <a itemprop="dateCreated" href="https://castella.qodeinteractive.com/2022/11/"
+                                        class="entry-date published updated">
+                                        November 30, 2022</a>
+                                    <div class="qodef-info-separator-end"></div>
+                                    <a href="https://castella.qodeinteractive.com/category/ceremony/"
+                                        rel="tag">Ceremony</a><span class="qodef-info-separator-single"></span>
+                                    <div class="qodef-info-separator-end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+
+            </div>
+            <div class=" contacto">
+                <div class="contacto__container mb-mr">
+                    <div class="img__container left star">
+                        <svg viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M57.4832 19.8249C57.4505 19.7355 57.3998 19.6908 57.3343 19.6908C55.94 19.6312 55.1087 19.6014 54.8436 19.6014C53.8783 19.6312 50.9824 19.7146 46.153 19.8487C41.9015 19.9679 38.5349 20.0543 36.0442 20.1139C36.0114 16.3564 35.9965 13.8682 35.9965 12.6703C35.9637 11.8687 35.931 11.082 35.8952 10.3073C35.8297 9.53251 35.7284 8.18861 35.5973 6.27257C35.4662 4.35653 35.35 2.81893 35.2487 1.65977H35.0997C34.9984 1.65977 34.9001 1.66871 34.8018 1.68361C34.7005 1.69851 34.635 1.73725 34.6022 1.79684C33.3419 4.61876 32.5763 6.4007 32.3111 7.14566C32.0787 7.73865 31.0836 10.6082 29.3229 15.7485C29.1382 16.2938 28.879 17.0566 28.5602 17.9923C28.3159 17.3159 28.0745 16.6633 27.8362 16.0584C26.3406 12.4051 25.28 9.30009 24.6484 6.74338C24.4487 5.9716 23.8827 4.04067 22.9531 0.95057C22.8876 0.804557 22.7207 0.506573 22.4556 0.0595968C22.4228 0 22.3394 -0.0148992 22.2053 0.0148992C22.104 0.0446976 22.0564 0.0893953 22.0564 0.148992C21.9908 1.39755 21.9551 2.13953 21.9551 2.37791C21.9908 3.23909 22.0802 5.83155 22.2292 10.1553C22.3781 14.4791 22.4854 17.7837 22.5539 20.0722C22.5539 20.0841 22.5539 20.1169 22.5539 20.1318C20.0155 20.0722 16.4553 19.9798 11.8493 19.8517C7.01684 19.7176 4.12096 19.6372 3.15865 19.6044C2.89349 19.6044 2.06226 19.6342 0.667951 19.6938C0.602406 19.6938 0.548779 19.7385 0.516007 19.8279C0.483234 19.9471 0.50111 20.0216 0.566655 20.0514C1.0642 20.2897 1.3949 20.4387 1.56174 20.4983C5.01475 21.3297 7.17475 21.8363 8.03874 22.0151C10.8959 22.5783 14.3638 23.5288 18.4484 24.8668C19.1217 25.0813 19.8517 25.2959 20.6084 25.5134C19.5627 25.7995 18.7106 26.0289 18.0998 26.1958C12.3558 27.7721 9.15002 28.6631 8.48564 28.8687C7.65739 29.1071 5.66424 29.7895 2.50916 30.9188C2.44361 30.9486 2.4019 31.0082 2.38403 31.0976C2.36913 31.187 2.36019 31.2764 2.36019 31.3658V31.4999C3.65619 31.5893 5.37227 31.6936 7.51737 31.8098C9.65948 31.929 11.1611 32.0184 12.0251 32.078C12.889 32.1078 13.7679 32.1376 14.6647 32.1674C15.9547 32.1674 18.5825 32.1823 22.5182 32.2061C22.4526 34.3904 22.3573 37.2629 22.2321 40.8477C22.0832 45.1714 21.9908 47.7639 21.958 48.6251C21.958 48.8634 21.9938 49.6054 22.0593 50.854C22.0593 50.9136 22.11 50.9583 22.2083 50.9881C22.3424 51.0179 22.4258 51.003 22.4586 50.9434C22.7237 50.4994 22.8906 50.2014 22.9561 50.0524C23.8857 46.9623 24.4517 45.0284 24.6513 44.2566C25.28 41.6999 26.3436 38.5979 27.8392 34.9416C28.0775 34.3397 28.3189 33.6871 28.5632 33.0107C28.8819 33.9464 29.1411 34.7092 29.3259 35.2545C31.0866 40.3947 32.0817 43.2613 32.3141 43.8573C32.5793 44.5993 33.342 46.3842 34.6052 49.2061C34.638 49.2657 34.7065 49.3015 34.8048 49.3194C34.9031 49.3343 35.0044 49.3402 35.1027 49.3402H35.2517C35.35 48.1811 35.4692 46.6435 35.6003 44.7274C35.7343 42.8114 35.8326 41.4675 35.8982 40.6927C35.931 39.9209 35.9637 39.1343 35.9995 38.3327C35.9995 37.2778 36.0114 35.2337 36.0382 32.2032C39.67 32.1793 42.116 32.1674 43.3435 32.1674C44.2402 32.1376 45.1191 32.1078 45.9831 32.078C46.8471 32.0184 48.3487 31.929 50.4908 31.8098C52.6329 31.6936 54.349 31.5893 55.648 31.4999V31.3658C55.648 31.2764 55.639 31.187 55.6212 31.0976C55.6033 31.0082 55.5616 30.9486 55.496 30.9188C52.341 29.7895 50.3508 29.1071 49.5196 28.8687C48.8552 28.6601 45.6524 27.7691 39.9054 26.1958C39.2946 26.0289 38.4455 25.7995 37.3968 25.5134C38.1535 25.2959 38.8835 25.0783 39.5568 24.8668C43.6414 23.5288 47.1093 22.5783 49.9694 22.0151C50.8305 21.8363 52.9905 21.3297 56.4435 20.4983C56.6073 20.4387 56.941 20.2897 57.4385 20.0514C57.5011 20.0216 57.516 19.9441 57.4832 19.8249Z"
+                                fill="#D94531" />
+                        </svg>
+                    </div>
+                    <div class="mail__container">
+                        <a href="mailto:info@terracottaorigen.com" class="mail">info@terracottaorigen.com</a>
+                    </div>
+                    <div class="img__container right star">
+                        <svg viewBox="0 0 58 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M57.4832 19.8249C57.4505 19.7355 57.3998 19.6908 57.3343 19.6908C55.94 19.6312 55.1087 19.6014 54.8436 19.6014C53.8783 19.6312 50.9824 19.7146 46.153 19.8487C41.9015 19.9679 38.5349 20.0543 36.0442 20.1139C36.0114 16.3564 35.9965 13.8682 35.9965 12.6703C35.9637 11.8687 35.931 11.082 35.8952 10.3073C35.8297 9.53251 35.7284 8.18861 35.5973 6.27257C35.4662 4.35653 35.35 2.81893 35.2487 1.65977H35.0997C34.9984 1.65977 34.9001 1.66871 34.8018 1.68361C34.7005 1.69851 34.635 1.73725 34.6022 1.79684C33.3419 4.61876 32.5763 6.4007 32.3111 7.14566C32.0787 7.73865 31.0836 10.6082 29.3229 15.7485C29.1382 16.2938 28.879 17.0566 28.5602 17.9923C28.3159 17.3159 28.0745 16.6633 27.8362 16.0584C26.3406 12.4051 25.28 9.30009 24.6484 6.74338C24.4487 5.9716 23.8827 4.04067 22.9531 0.95057C22.8876 0.804557 22.7207 0.506573 22.4556 0.0595968C22.4228 0 22.3394 -0.0148992 22.2053 0.0148992C22.104 0.0446976 22.0564 0.0893953 22.0564 0.148992C21.9908 1.39755 21.9551 2.13953 21.9551 2.37791C21.9908 3.23909 22.0802 5.83155 22.2292 10.1553C22.3781 14.4791 22.4854 17.7837 22.5539 20.0722C22.5539 20.0841 22.5539 20.1169 22.5539 20.1318C20.0155 20.0722 16.4553 19.9798 11.8493 19.8517C7.01684 19.7176 4.12096 19.6372 3.15865 19.6044C2.89349 19.6044 2.06226 19.6342 0.667951 19.6938C0.602406 19.6938 0.548779 19.7385 0.516007 19.8279C0.483234 19.9471 0.50111 20.0216 0.566655 20.0514C1.0642 20.2897 1.3949 20.4387 1.56174 20.4983C5.01475 21.3297 7.17475 21.8363 8.03874 22.0151C10.8959 22.5783 14.3638 23.5288 18.4484 24.8668C19.1217 25.0813 19.8517 25.2959 20.6084 25.5134C19.5627 25.7995 18.7106 26.0289 18.0998 26.1958C12.3558 27.7721 9.15002 28.6631 8.48564 28.8687C7.65739 29.1071 5.66424 29.7895 2.50916 30.9188C2.44361 30.9486 2.4019 31.0082 2.38403 31.0976C2.36913 31.187 2.36019 31.2764 2.36019 31.3658V31.4999C3.65619 31.5893 5.37227 31.6936 7.51737 31.8098C9.65948 31.929 11.1611 32.0184 12.0251 32.078C12.889 32.1078 13.7679 32.1376 14.6647 32.1674C15.9547 32.1674 18.5825 32.1823 22.5182 32.2061C22.4526 34.3904 22.3573 37.2629 22.2321 40.8477C22.0832 45.1714 21.9908 47.7639 21.958 48.6251C21.958 48.8634 21.9938 49.6054 22.0593 50.854C22.0593 50.9136 22.11 50.9583 22.2083 50.9881C22.3424 51.0179 22.4258 51.003 22.4586 50.9434C22.7237 50.4994 22.8906 50.2014 22.9561 50.0524C23.8857 46.9623 24.4517 45.0284 24.6513 44.2566C25.28 41.6999 26.3436 38.5979 27.8392 34.9416C28.0775 34.3397 28.3189 33.6871 28.5632 33.0107C28.8819 33.9464 29.1411 34.7092 29.3259 35.2545C31.0866 40.3947 32.0817 43.2613 32.3141 43.8573C32.5793 44.5993 33.342 46.3842 34.6052 49.2061C34.638 49.2657 34.7065 49.3015 34.8048 49.3194C34.9031 49.3343 35.0044 49.3402 35.1027 49.3402H35.2517C35.35 48.1811 35.4692 46.6435 35.6003 44.7274C35.7343 42.8114 35.8326 41.4675 35.8982 40.6927C35.931 39.9209 35.9637 39.1343 35.9995 38.3327C35.9995 37.2778 36.0114 35.2337 36.0382 32.2032C39.67 32.1793 42.116 32.1674 43.3435 32.1674C44.2402 32.1376 45.1191 32.1078 45.9831 32.078C46.8471 32.0184 48.3487 31.929 50.4908 31.8098C52.6329 31.6936 54.349 31.5893 55.648 31.4999V31.3658C55.648 31.2764 55.639 31.187 55.6212 31.0976C55.6033 31.0082 55.5616 30.9486 55.496 30.9188C52.341 29.7895 50.3508 29.1071 49.5196 28.8687C48.8552 28.6601 45.6524 27.7691 39.9054 26.1958C39.2946 26.0289 38.4455 25.7995 37.3968 25.5134C38.1535 25.2959 38.8835 25.0783 39.5568 24.8668C43.6414 23.5288 47.1093 22.5783 49.9694 22.0151C50.8305 21.8363 52.9905 21.3297 56.4435 20.4983C56.6073 20.4387 56.941 20.2897 57.4385 20.0514C57.5011 20.0216 57.516 19.9441 57.4832 19.8249Z"
+                                fill="#D94531" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="social__container">
+                    <div class="social__inner__container">
+                        <a href="https://www.instagram.com/terracottaorigen/?igsh=MzRlODBiNWFlZA%3D%3D"
+                            class="social__link" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="#" class="social__link" rel="noopener noreferrer">Ubicación</a>
+                        <a href="#" class="social__link" rel="noopener noreferrer">ABOUT US </a>
+                    </div>
+                </div>
+                <!-- <div class="scrollUp__container">
+                    <div class="scrollUp__inner__container">
+                        <a href="#alalimon" class="scrollUp"></a>
+                    </div>
+                </div> -->
+            </div>
+
+
+            <footer id="colophon" class="site-footer">
+                <div class="site-info">
+                    <div class="link__container">
+                        <a href="contact.html" class="legalink link"> Contact formulary </a>
+                        <div class="line__container">
+                            <svg class="line">
+                                <line x1="0" y1="0" x2="100%" y2="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="link__container">
+                        <a href="#" class="legalink link">Cookies policy</a>
+                        <div class="line__container">
+                            <svg class="line">
+                                <line x1="0" y1="0" x2="100%" y2="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="link__container">
+                        <a href="#" class="legalink link">Privacy policy</a>
+                        <div class="line__container">
+                            <svg class="line">
+                                <line x1="0" y1="0" x2="100%" y2="0" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="link__container">
+                        <a href="#" class="legalink link">All rights reserved</a>
+                        <div class="line__container">
+                            <svg class="line">
+                                <line x1="0" y1="0" x2="100%" y2="0" />
+                            </svg>
+                        </div>
+                    </div>
+                </div><!-- .site-info -->
+            </footer><!-- #colophon -->
+        </main>
+    </div><!-- #page -->
+    <script src="./assets/js/SVGPlugin.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script>
+        // Smooth scroll function
+        function scrollToSection(targetId) {
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Add click event listeners to your navigation links
+        const estudioNavLinks = document.querySelectorAll('.estudio__nav');
+        estudioNavLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                scrollToSection(targetId);
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
