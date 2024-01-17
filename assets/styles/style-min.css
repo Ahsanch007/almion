@@ -2428,7 +2428,7 @@ img {
 
 @media screen and (max-width:768px) {
     .contacto .contacto__container .img__container.left {
-        top: -40%;
+        top: -72%;
         left: 46%;
         width: 10vw;
         height: 10vw;
