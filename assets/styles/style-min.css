@@ -2431,7 +2431,8 @@ img {
         top: -40%;
         left: 46%;
         width: 10vw;
-        height: 10vw
+        height: 10vw;
+        
     }
 }
 
@@ -3723,12 +3724,17 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 5vw
+    /* padding: 0 5vw */
+    width: 500px;
 }
 
 @media screen and (max-width:768px) {
     .contact .address__container .text__container {
-        margin-bottom: 16vw
+        margin-bottom: 16vw;
+    padding: 0 5vw;
+
+    width: 100%;
+
     }
 }
 

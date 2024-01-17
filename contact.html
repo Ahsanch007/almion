@@ -74,8 +74,8 @@
                         </a>
                     </div>
                     <div class="container__proyectos__menu">
-                        <a class="proyectos__nav  mPro" href="/proyectos/">Proyectos</a>
-                        <a class="proyectos__nav  mPro" href="/proyectos/">Proyectos</a>
+                        <a class="proyectos__nav  mPro" href="projects.html">Portafolio</a>
+                        <a class="proyectos__nav  mPro" href="projects.html">Portafolio</a>
                     </div>
                 </div>
                 <div class="shop__nav__c">
@@ -83,8 +83,8 @@
                 </div>
                 <div class="estudio__nav__c">
                     <div class="container__estudio">
-                        <a class="estudio__nav " href="projects.html">Nuestros servicios</a>
-                        <a class="estudio__nav " href="projects.html">Nuestros servicios</a>
+                        <a class="estudio__nav " href="#services">Nuestros servicios</a>
+                        <a class="estudio__nav " href="#services">Nuestros servicios</a>
                     </div>
                     <div class="container__contacto">
                         <a class="contacto__nav " href="#">Contacto</a>
@@ -122,8 +122,8 @@
                         <a class="link__nav" href="/">Inicio</a>
                         <a class="link__nav mPro" href="projects.html">Portafolio
                         </a>
-                        <a class="link__nav" href="/estudio/">Nuestros servicios</a>
-                        <a class="link__nav" href="/contacto/">Contacto</a>
+                        <a class="link__nav" href="#">Nuestros servicios</a>
+                        <a class="link__nav" href="contact.html">Contacto</a>
                         <!-- <a class="link__nav" href="/shop/">Shop</a> -->
                     </div>
                 </div>
@@ -149,24 +149,30 @@
                 </div>
                 <div class="inner__container">
                     <div class="mail__container">
-                        <a href="mailto:hello@alalimon.es" class="mail">hello@alalimon.es</a>
+                        <a href="mailto:info@terracottaorigen.com" class="mail">info@terracottaorigen.com</a>
                     </div>
                     <div class="address__container">
                         <div class="text__container">
-                            <div class="container">
-                                <span class="city">Granada</span>
-                            </div>
-                            <div class="container">
-                                <span class="address">Plaza de Santa Ana, 4</span>
-                            </div>
-                            <div class="container">
-                                <span class="address">18009</span>
-                            </div>
-                            <div class="container">
-                                <span class="address">Granada, España</span>
-                            </div>
-                            <div class="container">
-                                <a href="tel:+34675676484" class="address">675676484</a>
+                            <div class="form-inputs">
+                                <form action="mailto:info@terracottaorigen.com" method="post" enctype="text/plain">
+                                    <div class="name-input">
+                                        <!-- <label for="input1">Name</label> -->
+                                        <input type="text" id="input1" name="Name" placeholder="Name">
+                                    </div>
+                                    <div class="company-input" style="padding: 15px 0px;">
+                                        <input type="text" id="input2" name="Company" placeholder="Company">
+                                    </div>
+                                    <div class="Email-input">
+                                        <!-- <label for="input3">Email</label> -->
+                                        <input type="text" id="input3" name="Email" placeholder="Email">
+                                    </div>
+                                    <div class="number-input" style="padding: 15px 0px;">
+                                        <input type="text" id="input4" name="Number" placeholder="Number">
+                                    </div>
+                                    <div class="submit-btn">
+                                        <button type="submit" disabled>Send</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <!-- <div class="text__container">
@@ -184,9 +190,9 @@
                     </div>
                 </div> -->
                     </div>
-                    <div class="faqs__container">
+                    <!-- <div class="faqs__container">
                         <a href="/faqs/" class="faqs">Q&A</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -214,7 +220,48 @@
             </footer><!-- #colophon -->
         </main>
     </div><!-- #page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputs = document.querySelectorAll('input');
+            let activeInput = null;
 
+            inputs.forEach(input => {
+                input.addEventListener('focus', function () {
+                    if (activeInput) {
+                        activeInput.parentNode.classList.remove('input-focused');
+                    }
+                    activeInput = input;
+                    input.parentNode.classList.add('input-focused');
+                });
+
+                input.addEventListener('blur', function () {
+                    if (!input.value.trim()) {
+                        input.parentNode.classList.remove('input-focused');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.querySelector('form');
+            var button = document.querySelector('.submit-btn button');
+
+            // Add an event listener to the form
+            form.addEventListener('input', function () {
+                // Check if all fields are filled
+                var allFieldsFilled = Array.from(form.elements).every(function (element) {
+                    return element.type !== 'submit' ? element.value.trim() !== '' : true;
+                });
+
+                // Enable or disable the button based on the check
+                button.disabled = !allFieldsFilled;
+
+                // Change the button color based on the check
+                button.style.backgroundColor = allFieldsFilled ? '#D4EB45' : '#808080';
+            });
+        });
+    </script>
 
 </body>
 
