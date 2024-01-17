@@ -844,6 +844,7 @@ letter-spacing: 0em;
 color: #ffff;
 border: none;
 cursor: not-allowed;
+background-color: #474f40;
 }
 .submit-btn button:enabled {
     cursor: pointer; /* Change cursor when button is enabled */
