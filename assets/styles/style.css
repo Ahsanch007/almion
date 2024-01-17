@@ -830,7 +830,7 @@ label {
   }
   
   .input-focused input {
-    border-bottom: 1px solid #D4EB45 !important; /* Change border color on focus */
+    border-bottom: 1px solid #d0833d !important; /* Change border color on focus */
   }
 input::placeholder{
     color: #474f40;
