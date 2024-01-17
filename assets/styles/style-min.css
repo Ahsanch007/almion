@@ -682,7 +682,7 @@ img {
 }
 
 .header .navigation .proyectos__nav__c .container__proyectos__menu .proyectos__nav.one {
-    color: #fcebe2
+    /* color: #fcebe2 */
 }
 
 .header .navigation .proyectos__nav__c .container__proyectos__menu .proyectos__nav.two {
@@ -760,7 +760,7 @@ img {
 .header .navigation .estudio__nav__c .container__contacto .estudio__nav.one,
 .header .navigation .estudio__nav__c .container__estudio .contacto__nav.one,
 .header .navigation .estudio__nav__c .container__estudio .estudio__nav.one {
-    color: #fcebe2
+    color: #d0833d
 }
 
 .header .navigation .estudio__nav__c .container__contacto .contacto__nav.two,
@@ -3695,7 +3695,7 @@ img {
     display: inline-block;
     color: transparent;
     padding-bottom: .4vw;
-    -webkit-text-stroke: 1px #fcebe2
+    -webkit-text-stroke: 1px #474f40
 }
 
 @media screen and (max-width:768px) {

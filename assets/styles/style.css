@@ -812,12 +812,12 @@ label {
     font-weight: 400;
     line-height: 16px;
     letter-spacing: 0em;
-    color: #000; /* Initial label color */
+    color: #474f40; /* Initial label color */
   }
   
   input {
     outline: none;
-    border-bottom: 1px solid #CDCDCD !important;
+    border-bottom: 1px solid #474f40 !important;
     padding-top: 20px;
     border: none;
     width: 100%;
@@ -833,7 +833,7 @@ label {
     border-bottom: 1px solid #D4EB45 !important; /* Change border color on focus */
   }
 input::placeholder{
-    color: #CDCDCD;
+    color: #474f40;
 }
 .submit-btn button{
     padding: 15px 60px;
