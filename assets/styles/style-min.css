@@ -894,7 +894,7 @@ img {
 }
 
 .header__mobile .navigation .menu__nav__container .menu__nav.one {
-    color: #fcebe2
+    /* color: #fcebe2 */
 }
 
 .header__mobile .navigation .menu__nav__container .menu__nav.two {
@@ -3700,7 +3700,7 @@ img {
 
 @media screen and (max-width:768px) {
     .contact .mail__container .mail {
-        font-size: 6vw
+        font-size: 4vw
     }
 }
 
