@@ -852,3 +852,38 @@ background-color: #474f40;
 .form-inputs{
     width: 100%;
 }
+
+.desktop-nav{
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, #fcebe2 0, #fceae1 6.67%, #fae7de 13.33%, #f8e3d9 20%, #f5dcd1 26.67%, #f1d4c8 33.33%, #eccabc 40%, #e6bfb0 46.67%, #e1b3a3 53.33%, #dba897 60%, #d69e8b 66.67%, #d29682 73.33%, #cf8f7a 80%, #cd8b75 86.67%, #cb8872 93.33%, #cb8771 100%);
+    z-index: 999999;
+}
+
+.servicios-title{
+    font-size: 6vw;
+    color: #474f40;
+}
+
+.servicess{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.text{
+    max-width: 400px ;
+}
+.text h2{
+    font-size: 2vw;
+    color: #474f40;
+}
+.servicess img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
