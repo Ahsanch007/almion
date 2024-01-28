@@ -147,7 +147,7 @@ img {
     .atf .atf__inner__container .titleUp__container .titleUp__inner__container .titleUp__title,
     .error-404 .marquee__container .marquee,
     .f-title {
-        font-size: 9vw
+        font-size: 7vw
     }
 }
 
@@ -1355,7 +1355,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 20%;
     margin-top: 3vw
 }
 
@@ -2077,7 +2076,7 @@ img {
 .proyectos .proyectos__container .img__container {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 43%;
     width: 9vw;
     height: 18vw;
     transform: translate(-50%, -50%);
@@ -2088,7 +2087,9 @@ img {
     .proyectos .proyectos__container .img__container {
         width: 17vw;
         height: 30vw;
-        transform: translate(-50%, -74%)
+        transform: translate(-50%, -74%);
+    left: 20%;
+
     }
 }
 

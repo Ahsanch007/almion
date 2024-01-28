@@ -874,6 +874,7 @@ background-color: #474f40;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0px;
+    flex-wrap: wrap;
 }
 .text{
     max-width: 400px ;
@@ -886,4 +887,13 @@ background-color: #474f40;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+}
+@media(max-width:776px){
+    .servicess{
+        justify-content: center;
+    }
+    .text h2{
+        font-size: 5vw;
+        color: #474f40;
+    }
 }
