@@ -692,7 +692,7 @@ body {
 }
 
 .elementor-top-section {
-    background-color: #C5CCB8;
+    background-color: #ca6641;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin-bottom: 0px;
     padding: 30px 0px 30px 0px;
@@ -899,6 +899,13 @@ background-color: #474f40;
     width: 200px;
     height: 200px;
 }
+.logo-sun{
+    height: 100px;
+    width: 100px;
+}
+.opac{
+    opacity: 50%;
+}
 @media(max-width:776px){
     .servicess{
         justify-content: center;
@@ -910,4 +917,9 @@ background-color: #474f40;
         font-size: 5vw;
         color: #474f40;
     }
+    .logo-sun{
+        height: 70px;
+        width: 70px;
+    }
+   
 }

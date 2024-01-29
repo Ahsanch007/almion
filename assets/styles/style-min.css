@@ -2041,7 +2041,8 @@ img {
 
 @media screen and (max-width:768px) {
     .proyectos {
-        padding: 38vw 0
+        padding-top: 20vw;
+        padding-bottom: 50vw;
     }
 }
 
