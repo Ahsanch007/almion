@@ -3685,7 +3685,13 @@ img {
     margin-bottom: 8vw;
     overflow: hidden
 }
-
+.contact .mail__container2{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vw;
+    overflow: hidden
+}
 @media screen and (max-width:768px) {
     .contact .mail__container {
         padding: 24vw 3vw
@@ -3729,6 +3735,14 @@ img {
     width: 700px;
 }
 
+.contact .address__container .text__container2 {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* padding: 0 5vw */
+    width: 500px;
+}
 @media screen and (max-width:768px) {
     .contact .address__container .text__container {
         margin-bottom: 16vw;

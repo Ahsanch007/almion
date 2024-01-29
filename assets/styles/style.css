@@ -876,6 +876,13 @@ background-color: #474f40;
     padding: 20px 0px;
     flex-wrap: wrap;
 }
+.studio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
 .text{
     max-width: 400px ;
 }
@@ -888,8 +895,15 @@ background-color: #474f40;
     height: 200px;
     border-radius: 50%;
 }
+.studio img{
+    width: 200px;
+    height: 200px;
+}
 @media(max-width:776px){
     .servicess{
+        justify-content: center;
+    }
+    .studio{
         justify-content: center;
     }
     .text h2{
