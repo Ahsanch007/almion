@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="menu__nav__container">
-                    <button class="menu__nav  "
+                    <button class="menu__nav  " id="menuButton"
                         style="cursor: pointer; background-color: transparent;border: none;">Menú</button>
                 </div>
                 <div class="hidden__nav">
@@ -209,6 +209,21 @@
                 button.disabled = !allFieldsFilled;
 
                 // Change the button color based on the check
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.getElementById('menuButton');
+            var hiddenNav = document.querySelector('.hidden__nav');
+            const closeButton = document.querySelector('.xclose');
+
+            menuButton.addEventListener('click', function () {
+                hiddenNav.style.display = (hiddenNav.style.display === 'none' || hiddenNav.style.display === '') ? 'block' : 'none';
+            });
+            closeButton.addEventListener('click', function () {
+                // Close the hidden nav when close button is clicked
+                hiddenNav.style.display = 'none';
             });
         });
     </script>

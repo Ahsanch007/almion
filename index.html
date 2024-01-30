@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="menu__nav__container">
-                    <button class="menu__nav  "
+                    <button class="menu__nav  " id="menuButton"
                         style="cursor: pointer; background-color: transparent;border: none;">Menú</button>
                 </div>
                 <div class="hidden__nav">
@@ -182,9 +182,9 @@
 
                     </h2>
                     <div class="star__container">
-                        <img src="./assets/images/SUN VECTOR.svg" width="100px" alt="">
-                        <img src="./assets/images/SUN VECTOR.svg" width="100px" alt="">
-                        <img src="./assets/images/SUN VECTOR.svg" width="100px" alt="">
+                        <img src="./assets/images/SUN RED.svg" width="100px" alt="">
+                        <img src="./assets/images/SUN RED.svg" width="100px" alt="">
+                        <img src="./assets/images/SUN RED.svg" width="100px" alt="">
 
                     </div>
                 </div>
@@ -401,7 +401,7 @@
 
                     </div>
                     <div class="title__container">
-                        <a href="projects.html">
+                        <a href="Servicios.html">
                             <h2 class="title">NUESTROS <span class="title__inner">SERVICIOS</span></h2>
                             <!-- <svg height="5" width="54vw"><line x1="0" y1="0" x2="54vw" y2="0" style="stroke:#474F40;stroke-width:5" /></svg> -->
                         </a>
@@ -712,13 +712,13 @@
             <div class=" contacto">
                 <div class="contacto__container mb-mr">
                     <div class="img__container left star">
-                        <img src="./assets/images/SUN VECTOR.svg" alt="">
+                        <img src="./assets/images/SUN RED.svg" alt="">
                     </div>
                     <div class="mail__container">
                         <a href="mailto:info@terracottaorigen.com" class="mail">info@terracottaorigen.com</a>
                     </div>
                     <div class="img__container right star">
-                        <img src="./assets/images/SUN VECTOR.svg" alt="">
+                        <img src="./assets/images/SUN RED.svg" alt="">
 
                     </div>
                 </div>
@@ -798,6 +798,21 @@
                 e.preventDefault();
                 const targetId = this.getAttribute('href').substring(1);
                 scrollToSection(targetId);
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.getElementById('menuButton');
+            var hiddenNav = document.querySelector('.hidden__nav');
+            const closeButton = document.querySelector('.xclose');
+
+            menuButton.addEventListener('click', function () {
+                hiddenNav.style.display = (hiddenNav.style.display === 'none' || hiddenNav.style.display === '') ? 'block' : 'none';
+            });
+            closeButton.addEventListener('click', function () {
+                // Close the hidden nav when close button is clicked
+                hiddenNav.style.display = 'none';
             });
         });
     </script>

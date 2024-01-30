@@ -3742,7 +3742,7 @@ img {
     /* align-items: center; */
     justify-content: center;
     /* padding: 0 5vw */
-    width: 500px;
+    width: 550px;
 }
 @media screen and (max-width:768px) {
     .contact .address__container .text__container {
@@ -4956,6 +4956,7 @@ body.is-loading {
         left: 100%;
         width: 100%;
         height: 100%;
+        display: none;
         background: linear-gradient(180deg, #fcebe2 0, #fceae1 6.67%, #fae7de 13.33%, #f8e3d9 20%, #f5dcd1 26.67%, #f1d4c8 33.33%, #eccabc 40%, #e6bfb0 46.67%, #e1b3a3 53.33%, #dba897 60%, #d69e8b 66.67%, #d29682 73.33%, #cf8f7a 80%, #cd8b75 86.67%, #cb8872 93.33%, #cb8771 100%)
     }
     .header__mobile .navigation .hidden__nav .hidden__container {
