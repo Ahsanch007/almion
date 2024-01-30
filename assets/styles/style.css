@@ -912,6 +912,7 @@ background-color: #474f40;
     }
     .studio{
         justify-content: center;
+        flex-direction: column;
     }
     .text h2{
         font-size: 5vw;
