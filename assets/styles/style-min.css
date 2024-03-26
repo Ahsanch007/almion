@@ -38,10 +38,20 @@ img {
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor
 }
-
+.nav-link2{
+    font-family: Eczar, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(18.76px, 1.19792vw, 2vw);
+    line-height: 100%;
+    letter-spacing: .25em;
+}
 @media screen and (max-width:768px) {
     .proyecto__S {
         padding: 0
+    }
+    .nav-link2{
+        display: none
     }
 }
 
@@ -139,6 +149,12 @@ img {
     line-height: 120%;
     letter-spacing: .2em;
     /* margin-bottom: 10px; */
+}
+.titleUp__title2{
+    font-size: 18px;
+    text-align: right;
+    color: #524944;
+
 }
 
 @media screen and (max-width:768px) {
@@ -890,7 +906,7 @@ img {
 }
 
 .header__mobile .navigation .menu__nav__container .menu__nav {
-    color: #d0833d
+    color: #dba171
 }
 
 .header__mobile .navigation .menu__nav__container .menu__nav.one {
@@ -1067,8 +1083,9 @@ img {
 .atf .atf__inner__container .titleUp__container .titleUp__inner__container .titleUp__title {
     display: inline-block;
     color: transparent;
-    -webkit-text-stroke: .12136vw #474f40;
-    text-transform: capitalize;
+    /* -webkit-text-stroke: .12136vw #474f40; */
+    color: #524944;
+    /* text-transform: capitalize; */
     padding-top: .1vw
 }
 
@@ -1237,7 +1254,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vw
+    margin-top: 6vw
 }
 
 @media screen and (max-width:991px) {
@@ -1263,7 +1280,7 @@ img {
 
 .atf .atf__inner__container .social__container .social__inner__container .social__link {
     font-size: clamp(9px, .63728vw, 1vw);
-    color: #474f40;
+    color: #524944;
     text-transform: uppercase;
     transition: color .2s ease-out
 }
@@ -4893,7 +4910,7 @@ body.is-loading {
 }
 
 .home {
-    background: linear-gradient(180deg, #fcebe2 0, #fceae1 6.67%, #fae7de 13.33%, #f8e3d9 20%, #f5dcd1 26.67%, #f1d4c8 33.33%, #eccabc 40%, #e6bfb0 46.67%, #e1b3a3 53.33%, #dba897 60%, #d69e8b 66.67%, #d29682 73.33%, #cf8f7a 80%, #cd8b75 86.67%, #cb8872 93.33%, #cb8771 100%)
+    background: #fffbf9
 }
 
 .pagEstudio {

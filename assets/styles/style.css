@@ -738,13 +738,14 @@ body {
     margin-top: 20px;
 }
 .video__inner__container img {
-    width: 100%;
+    width: 500px;
     height: 256px;
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .3s ease-in-out;
+    object-fit: cover;
 }
 
 .video__inner__container img.active {
