@@ -801,6 +801,10 @@ body {
 
         height: 200px !important;
     }
+    .video__inner__container img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
