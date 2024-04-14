@@ -1110,10 +1110,10 @@ img {
 }
 
 .atf .atf__inner__container .video__container .video__inner__container {
-    position: absolute;
+    /* position: absolute; */
     width: 33.333333333333336vw;
-    height: 18.75vw;
-    padding-bottom: 18.33%
+    /* height: 18.75vw;
+    padding-bottom: 18.33% */
 }
 
 @media screen and (max-width:991px) {
@@ -1336,16 +1336,17 @@ img {
 }
 
 .mantra .mantra__container .mantra__title {
-    font-size: 3vw;
-    color: #d0833d;
+    font-size: 2vw;
+    color: #524944;
     text-align: center;
     max-width: 75vw
 }
 
 @media screen and (max-width:768px) {
     .mantra .mantra__container .mantra__title {
-        font-size: 4.645833vw;
-        max-width: 67vw
+        font-size: 4vw;
+         max-width: 100%;
+         padding: 0px 20px !important;
     }
 }
 
@@ -2059,7 +2060,7 @@ img {
 @media screen and (max-width:768px) {
     .proyectos {
         padding-top: 20vw;
-        padding-bottom: 50vw;
+        padding-bottom: 89vw;
     }
 }
 
@@ -2411,7 +2412,8 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 6vw
+    padding-bottom: 6vw;
+    padding-top: 3vw;
 }
 
 @media screen and (max-width:768px) {
