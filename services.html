@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&display=swap" rel="stylesheet">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name="google-site-verification" content="NjhKGJC-1ed6D0-UBjNSPFpxofurxlxB0GjyT66OIXk" />
+
+    <title>Almion</title>
+    <!-- <meta name="google-site-verification" content="NjhKGJC-1ed6D0-UBjNSPFpxofurxlxB0GjyT66OIXk" />
+    <link rel='dns-prefetch' href='//code.jquery.com' />
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+    <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+    <link rel='dns-prefetch' href='//unpkg.com' />
+    <link rel='dns-prefetch' href='//www.googletagmanager.com' />
+    <link rel='dns-prefetch' href='//s.w.org' /> -->
+
+
+
+    <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js?ver=3.5.1' id='jQuery-js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js?ver=3.5.1' id='greensock-js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js?ver=3.5.1'
+        id='scrollTrigger-js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/EasePack.min.js?ver=3.0.1' id='easepack-js'></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js?ver=4.1.4' id='imagesLoaded-js'></script>
+    <script src='https://unpkg.com/@barba/core?ver=2.4.0' id='barba-js'></script>
+    <script src='https://unpkg.com/@barba/prefetch?ver=2.4.0' id='barbaPrefetch-js'></script>
+    <script src='https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js?ver=8.5.3'
+        id='smoothScrollbar-js'></script>
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style-min.css">
+
+</head>
+
+<body class="page-template page-template-page-contacto page-template-page-contacto-php page page-id-12 is-loading"
+    data-barba="wrapper">
+
+    <div class="loader">
+        <div class="loader__mask">
+            <!-- <div class="inner">
+                <div class="progress"></div>
+            </div> -->
+        </div>
+    </div>
+    <div class="loader__content">
+        <div class="inner">
+            <!-- this will be animated on top of the dark background -->
+            <div class="loader__title">
+                <!-- <div class="loader__title--mask"><span>Algo sobre </span></div>
+                <div class="loader__title--mask"><span>la tierra</span></div> -->
+            </div>
+            <div class="loader__image">
+                <div class="loader__image--mask">
+                    <img src="./assets/images/SOL.svg" width="100px" alt="" class="rotate-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="viewport">
+
+        <main id="main" class="home" data-barba="container" data-barba-namespace="contacto">
+            <div class="services-section">
+                <div class="title__container">
+                    <h2 class="title__inner_services halimum-font "> Servicios </h2>
+                    <p class="title__inner1_services">
+                        "Desde bodas hasta proyectos empresariales, nos enorgullece ofrecer soluciones de decoración que
+                        no solo embellecen, sino que también preservan nuestro planeta para las generaciones futuras."
+                    </p>
+                    <img src="./assets/images/SOL.svg" style="padding-top: 10px;" class="logo-sun" alt="">
+
+                </div>
+            </div>
+
+
+
+        </main>
+    </div><!-- #page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const inputs = document.querySelectorAll('input');
+            let activeInput = null;
+
+            inputs.forEach(input => {
+                input.addEventListener('focus', function () {
+                    if (activeInput) {
+                        activeInput.parentNode.classList.remove('input-focused');
+                    }
+                    activeInput = input;
+                    input.parentNode.classList.add('input-focused');
+                });
+
+                input.addEventListener('blur', function () {
+                    if (!input.value.trim()) {
+                        input.parentNode.classList.remove('input-focused');
+                    }
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var form = document.querySelector('form');
+            var button = document.querySelector('.submit-btn button');
+
+            // Add an event listener to the form
+            form.addEventListener('input', function () {
+                // Check if all fields are filled
+                var allFieldsFilled = Array.from(form.elements).every(function (element) {
+                    return element.type !== 'submit' ? element.value.trim() !== '' : true;
+                });
+
+                // Enable or disable the button based on the check
+                button.disabled = !allFieldsFilled;
+
+                // Change the button color based on the check
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuButton = document.getElementById('menuButton');
+            var hiddenNav = document.querySelector('.hidden__nav');
+            const closeButton = document.querySelector('.xclose');
+
+            menuButton.addEventListener('click', function () {
+                hiddenNav.style.display = (hiddenNav.style.display === 'none' || hiddenNav.style.display === '') ? 'block' : 'none';
+            });
+            closeButton.addEventListener('click', function () {
+                // Close the hidden nav when close button is clicked
+                hiddenNav.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+
+<!--copyscapeskip-->
+<aside id="moove_gdpr_cookie_info_bar"
+    class="moove-gdpr-info-bar-hidden moove-gdpr-align-center moove-gdpr-dark-scheme gdpr_infobar_postion_bottom"
+    role="note" aria-label="Banner de cookies RGPD" style="display: none;">
+    <div class="moove-gdpr-info-bar-container">
+        <div class="moove-gdpr-info-bar-content">
+
+            <div class="moove-gdpr-cookie-notice">
+                <p>Utilizamos cookies para ofrecerte la mejor experiencia en nuestra web.</p>
+                <p>Puedes aprender más sobre qué cookies utilizamos o desactivarlas en los <span role="link"
+                        tabindex="0" data-href="#moove_gdpr_cookie_modal" class="change-settings-button">ajustes</span>.
+                </p>
+                <button class="moove-gdpr-infobar-close-btn gdpr-content-close-btn"
+                    aria-label="Cerrar el banner de cookies RGPD">
+                    <span class="gdpr-sr-only">Cerrar el banner de cookies RGPD</span>
+                    <i class="moovegdpr-arrow-close"></i>
+                </button>
+            </div>
+            <!--  .moove-gdpr-cookie-notice -->
+            <div class="moove-gdpr-button-holder">
+                <button class="mgbutton moove-gdpr-infobar-allow-all gdpr-fbo-0" aria-label="Aceptar">Aceptar</button>
+                <button class="mgbutton moove-gdpr-infobar-reject-btn gdpr-fbo-1 "
+                    aria-label="Rechazar">Rechazar</button>
+                <button class="mgbutton moove-gdpr-infobar-settings-btn change-settings-button gdpr-fbo-2"
+                    data-href="#moove_gdpr_cookie_modal" aria-label="Ajustes">Ajustes</button>
+                <button class="moove-gdpr-infobar-close-btn gdpr-fbo-3" aria-label="Cerrar el banner de cookies RGPD">
+                    <span class="gdpr-sr-only">Cerrar el banner de cookies RGPD</span>
+                    <i class="moovegdpr-arrow-close"></i>
+                </button>
+            </div>
+            <!--  .button-container -->
+        </div>
+        <!-- moove-gdpr-info-bar-content -->
+    </div>
+    <!-- moove-gdpr-info-bar-container -->
+</aside>
+<!-- #moove_gdpr_cookie_info_bar -->
+<!--/copyscapeskip-->
+<!-- Facebook Pixel Event Code -->
+<script type='text/javascript'>
+    document.addEventListener('wpcf7mailsent', function (event) {
+        if ("fb_pxl_code" in event.detail.apiResponse) {
+            eval(event.detail.apiResponse.fb_pxl_code);
+        }
+    }, false);
+</script>
+<!-- End Facebook Pixel Event Code -->
+<div id='fb-pxl-ajax-code'></div>
+
+<script src="./assets/js/SVGPlugin.min.js"></script>
+<script src="./assets/js/main.js"></script>
+
+<script id='moove_gdpr_frontend-js-extra'>
+    var moove_frontend_gdpr_scripts = { "ajaxurl": "https:\/\/alalimon.es\/wp-admin\/admin-ajax.php", "post_id": "8", "plugin_dir": "https:\/\/alalimon.es\/wp-content\/plugins\/gdpr-cookie-compliance", "show_icons": "all", "is_page": "1", "strict_init": "1", "enabled_default": { "third_party": 0, "advanced": 0 }, "geo_location": "false", "force_reload": "false", "is_single": "", "hide_save_btn": "false", "current_user": "0", "cookie_expiration": "365", "script_delay": "2000", "gdpr_scor": "true", "wp_lang": "" };
+</script>
+
+
+<button data-href="#moove_gdpr_cookie_modal" id="moove_gdpr_save_popup_settings_button"
+    style='display: none;bottom: 20px; left: 20px;' class=" gdpr-floating-button-custom-position"
+    aria-label="Cambiar los ajustes de cookies">
+    <span class="moove_gdpr_icon">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" style="max-width: 30px; max-height: 30px;">
+            <g data-name="1">
+                <path
+                    d="M293.9,450H233.53a15,15,0,0,1-14.92-13.42l-4.47-42.09a152.77,152.77,0,0,1-18.25-7.56L163,413.53a15,15,0,0,1-20-1.06l-42.69-42.69a15,15,0,0,1-1.06-20l26.61-32.93a152.15,152.15,0,0,1-7.57-18.25L76.13,294.1a15,15,0,0,1-13.42-14.91V218.81A15,15,0,0,1,76.13,203.9l42.09-4.47a152.15,152.15,0,0,1,7.57-18.25L99.18,148.25a15,15,0,0,1,1.06-20l42.69-42.69a15,15,0,0,1,20-1.06l32.93,26.6a152.77,152.77,0,0,1,18.25-7.56l4.47-42.09A15,15,0,0,1,233.53,48H293.9a15,15,0,0,1,14.92,13.42l4.46,42.09a152.91,152.91,0,0,1,18.26,7.56l32.92-26.6a15,15,0,0,1,20,1.06l42.69,42.69a15,15,0,0,1,1.06,20l-26.61,32.93a153.8,153.8,0,0,1,7.57,18.25l42.09,4.47a15,15,0,0,1,13.41,14.91v60.38A15,15,0,0,1,451.3,294.1l-42.09,4.47a153.8,153.8,0,0,1-7.57,18.25l26.61,32.93a15,15,0,0,1-1.06,20L384.5,412.47a15,15,0,0,1-20,1.06l-32.92-26.6a152.91,152.91,0,0,1-18.26,7.56l-4.46,42.09A15,15,0,0,1,293.9,450ZM247,420h33.39l4.09-38.56a15,15,0,0,1,11.06-12.91A123,123,0,0,0,325.7,356a15,15,0,0,1,17,1.31l30.16,24.37,23.61-23.61L372.06,328a15,15,0,0,1-1.31-17,122.63,122.63,0,0,0,12.49-30.14,15,15,0,0,1,12.92-11.06l38.55-4.1V232.31l-38.55-4.1a15,15,0,0,1-12.92-11.06A122.63,122.63,0,0,0,370.75,187a15,15,0,0,1,1.31-17l24.37-30.16-23.61-23.61-30.16,24.37a15,15,0,0,1-17,1.31,123,123,0,0,0-30.14-12.49,15,15,0,0,1-11.06-12.91L280.41,78H247l-4.09,38.56a15,15,0,0,1-11.07,12.91A122.79,122.79,0,0,0,201.73,142a15,15,0,0,1-17-1.31L154.6,116.28,131,139.89l24.38,30.16a15,15,0,0,1,1.3,17,123.41,123.41,0,0,0-12.49,30.14,15,15,0,0,1-12.91,11.06l-38.56,4.1v33.38l38.56,4.1a15,15,0,0,1,12.91,11.06A123.41,123.41,0,0,0,156.67,311a15,15,0,0,1-1.3,17L131,358.11l23.61,23.61,30.17-24.37a15,15,0,0,1,17-1.31,122.79,122.79,0,0,0,30.13,12.49,15,15,0,0,1,11.07,12.91ZM449.71,279.19h0Z"
+                    fill="currentColor" />
+                <path
+                    d="M263.71,340.36A91.36,91.36,0,1,1,355.08,249,91.46,91.46,0,0,1,263.71,340.36Zm0-152.72A61.36,61.36,0,1,0,325.08,249,61.43,61.43,0,0,0,263.71,187.64Z"
+                    fill="currentColor" />
+            </g>
+        </svg>
+    </span>
+    <span class="moove_gdpr_text">Cambiar los ajustes de cookies</span>
+</button>
+<div id="moove_gdpr_cookie_modal" class="gdpr_lightbox-hide" role="complementary" aria-label="Pantalla de ajustes RGPD">
+    <div class="moove-gdpr-modal-content moove-clearfix logo-position-left moove_gdpr_modal_theme_v1">
+        <button class="moove-gdpr-modal-close" aria-label="Cerrar los ajustes de cookies RGPD">
+            <span class="gdpr-sr-only">Cerrar los ajustes de cookies RGPD</span>
+            <span class="gdpr-icon moovegdpr-arrow-close"></span>
+        </button>
+        <div class="moove-gdpr-modal-left-content">
+
+            <div class="moove-gdpr-company-logo-holder">
+                <img src="./assets/images/logo_estudio.png" alt="" width="136" height="74" class="img-responsive" />
+            </div>
+            <ul id="moove-gdpr-menu">
+
+                <li class="menu-item-on menu-item-privacy_overview menu-item-selected">
+                    <button data-href="#privacy_overview" class="moove-gdpr-tab-nav" aria-label="Resumen de privacidad">
+                        <span class="gdpr-svg-icon">
+                            <svg class="icon icon-privacy-overview" viewBox="0 0 26 32">
+                                <path
+                                    d="M11.082 27.443l1.536 0.666 1.715-0.717c5.018-2.099 8.294-7.014 8.294-12.442v-5.734l-9.958-5.325-9.702 5.325v5.862c0 5.376 3.2 10.24 8.115 12.365zM4.502 10.138l8.166-4.506 8.397 4.506v4.813c0 4.838-2.893 9.19-7.347 11.034l-1.101 0.461-0.922-0.41c-4.352-1.894-7.194-6.195-7.194-10.957v-4.941zM12.029 14.259h1.536v7.347h-1.536v-7.347zM12.029 10.394h1.536v2.483h-1.536v-2.483z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="gdpr-nav-tab-title">Resumen de privacidad</span>
+                    </button>
+                </li>
+
+                <li class="menu-item-strict-necessary-cookies menu-item-off">
+                    <button data-href="#strict-necessary-cookies" class="moove-gdpr-tab-nav"
+                        aria-label="Cookies estrictamente necesarias">
+                        <span class="gdpr-svg-icon">
+                            <svg class="icon icon-strict-necessary" viewBox="0 0 26 32">
+                                <path
+                                    d="M22.685 5.478l-9.984 10.752-2.97-4.070c-0.333-0.461-0.973-0.538-1.434-0.205-0.435 0.333-0.538 0.947-0.23 1.408l3.686 5.094c0.179 0.256 0.461 0.41 0.768 0.435h0.051c0.282 0 0.538-0.102 0.742-0.307l10.854-11.699c0.358-0.435 0.333-1.075-0.102-1.434-0.384-0.384-0.998-0.358-1.382 0.026v0zM22.301 12.954c-0.563 0.102-0.922 0.64-0.794 1.203 0.128 0.614 0.179 1.229 0.179 1.843 0 5.094-4.122 9.216-9.216 9.216s-9.216-4.122-9.216-9.216 4.122-9.216 9.216-9.216c1.536 0 3.021 0.384 4.378 1.101 0.512 0.23 1.126 0 1.357-0.538 0.205-0.461 0.051-0.998-0.384-1.254-5.478-2.944-12.314-0.922-15.283 4.557s-0.922 12.314 4.557 15.258 12.314 0.922 15.258-4.557c0.896-1.638 1.357-3.482 1.357-5.35 0-0.768-0.077-1.51-0.23-2.253-0.102-0.538-0.64-0.896-1.178-0.794z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="gdpr-nav-tab-title">Cookies estrictamente necesarias</span>
+                    </button>
+                </li>
+
+
+
+
+                <li class="menu-item-moreinfo menu-item-off">
+                    <button data-href="#cookie_policy_modal" class="moove-gdpr-tab-nav"
+                        aria-label="Política de cookies">
+                        <span class="gdpr-svg-icon">
+                            <svg class="icon icon-policy" viewBox="0 0 26 32">
+                                <path
+                                    d="M21.936 10.816c0-0.205-0.077-0.384-0.23-0.538l-5.862-5.99c-0.154-0.154-0.333-0.23-0.538-0.23h-9.088c-1.408 0-2.56 1.152-2.56 2.56v18.765c0 1.408 1.152 2.56 2.56 2.56h13.158c1.408 0 2.56-1.152 2.56-2.56v-14.566zM16.022 6.669l3.558 3.635h-3.302c-0.154 0-0.256-0.102-0.256-0.256v-3.379zM19.376 26.381h-13.158c-0.563 0-1.024-0.461-1.024-1.024v-18.739c0-0.563 0.461-1.024 1.024-1.024h8.269v4.454c0 0.998 0.794 1.792 1.792 1.792h4.122v13.542c0 0.538-0.461 0.998-1.024 0.998zM16.893 18.419h-8.192c-0.435 0-0.768 0.333-0.768 0.768s0.333 0.768 0.768 0.768h8.192c0.435 0 0.768-0.333 0.768-0.768s-0.333-0.768-0.768-0.768zM16.893 14.528h-8.192c-0.435 0-0.768 0.333-0.768 0.768s0.333 0.768 0.768 0.768h8.192c0.435 0 0.768-0.333 0.768-0.768s-0.333-0.768-0.768-0.768z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </span>
+                        <span class="gdpr-nav-tab-title">Política de cookies</span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="moove-gdpr-branding-cnt">
+
+                <a href="https://wordpress.org/plugins/gdpr-cookie-compliance/" target="_blank"
+                    rel="noopener noreferrer nofollow" class='moove-gdpr-branding'>Desarrollado por&nbsp; <span>GDPR
+                        Cookie Compliance</span></a>
+            </div>
+        </div>
+        <div class="moove-gdpr-modal-right-content">
+            <div class="moove-gdpr-modal-title">
+
+            </div>
+            <div class="main-modal-content">
+
+                <div class="moove-gdpr-tab-content">
+
+                    <div id="privacy_overview" class="moove-gdpr-tab-main">
+                        <span class="tab-title">Resumen de privacidad</span>
+                        <div class="moove-gdpr-tab-main-content">
+                            <p>Esta web utiliza cookies para que podamos ofrecerte la mejor experiencia de usuario
+                                posible. La información de las cookies se almacena en tu navegador y realiza funciones
+                                tales como reconocerte cuando vuelves a nuestra web o ayudar a nuestro equipo a
+                                comprender qué secciones de la web encuentras más interesantes y útiles.</p>
+                        </div>
+
+                    </div>
+                    <div id="strict-necessary-cookies" class="moove-gdpr-tab-main" style="display:none">
+                        <span class="tab-title">Cookies estrictamente necesarias</span>
+                        <div class="moove-gdpr-tab-main-content">
+                            <p>Las cookies estrictamente necesarias tiene que activarse siempre para que podamos guardar
+                                tus preferencias de ajustes de cookies.</p>
+                            <div class="moove-gdpr-status-bar ">
+                                <div class="gdpr-cc-form-wrap">
+                                    <div class="gdpr-cc-form-fieldset">
+                                        <label class="cookie-switch" for="moove_gdpr_strict_cookies">
+                                            <span class="gdpr-sr-only">Activar o desactivar las cookies</span>
+                                            <input type="checkbox" aria-label="Cookies estrictamente necesarias"
+                                                value="check" name="moove_gdpr_strict_cookies"
+                                                id="moove_gdpr_strict_cookies">
+                                            <span class="cookie-slider cookie-round" data-text-enable="Activadas"
+                                                data-text-disabled="Desactivadas"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="moove-gdpr-strict-warning-message" style="margin-top: 10px;">
+                                <p>Si desactivas esta cookie no podremos guardar tus preferencias. Esto significa que
+                                    cada vez que visites esta web tendrás que activar o desactivar las cookies de nuevo.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div id="cookie_policy_modal" class="moove-gdpr-tab-main" style="display:none">
+                        <span class="tab-title">Política de cookies</span>
+                        <div class="moove-gdpr-tab-main-content">
+                            <p>Más información sobre nuestra <a href="/politica-cookies/" target="_blank"
+                                    rel="noopener">política de cookies</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moove-gdpr-modal-footer-content">
+                <div class="moove-gdpr-button-holder">
+                    <button class="mgbutton moove-gdpr-modal-allow-all button-visible" aria-label="Activar todo">Activar
+                        todo</button>
+                    <button class="mgbutton moove-gdpr-modal-save-settings button-visible"
+                        aria-label="Guardar cambios">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="moove-clearfix"></div>
+
+    </div>
+</div>
+
+</html>
